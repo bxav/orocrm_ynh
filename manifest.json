@@ -1,47 +1,37 @@
 {
-    "name": "YunoHost example app",
-    "id": "ynhexample",
+    "name": "OroCrm",
+    "id": "orocrm",
     "description": {
-        "en": "Example package for Yunohost applications."
-    },
-    "licence": "GPL-2",
-    "developer": {
-        "name": "John doe",
-        "email": "john.doe@example.com",
-        "url": "http://example.com"
+        "en": "Sync & share your files, pictures, music, contacts, calendars, and much more !",
+        "fr": "Synchronisez et partagez vos fichiers, images, musiques, contacts, calendriers, et bien plus !"
     },
     "multi_instance": "false",
     "arguments": {
         "install" : [
             {
                 "name": "domain",
+                "type": "domain",
                 "ask": {
-                    "en": "Choose a domain for ynhexample"
+                    "en": "Choose a domain for OroCrm"
                 },
-                "example": "example.com"
+                "example": "domain.org"
             },
             {
                 "name": "path",
+                "type": "path",
                 "ask": {
-                    "en": "Choose a path for ynhexample"
+                    "en": "Choose a path for OroCrm"
                 },
-                "example": "/example",
-                "default": "/example"
+                "example": "/orocrm",
+                "default": "/orocrm"
             },
             {
                 "name": "admin",
+                "type": "user",
                 "ask": {
-                    "en": "Choose an admin user"
+                    "en": "Choose the Orocrm administrator (must be an existing YunoHost user)"
                 },
-                "example": "johndoe"
-            },
-            {
-                "name": "is_public",
-                "ask": {
-                    "en": "Is it a public application ?"
-                },
-                "choices": ["Yes", "No"],
-                "default": "Yes"
+                "example": "homer"
             }
         ]
     }

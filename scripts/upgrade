@@ -1,5 +1,5 @@
 #!/bin/bash
-app=ynhexample
+app=orocrm
 
 # Retrieve arguments
 domain=$(sudo yunohost app setting $app domain)
